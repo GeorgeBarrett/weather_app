@@ -13,6 +13,17 @@ export default function Home() {
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=bristol&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`
 
+  const fetchWeather = (e) => {
+    e.preventDefault()
+    setLoading(true)
+    axios.get(url).then((response) => {
+      setWeather(response.data)
+      console.log(response.data)
+    })
+    setCity("")
+    setLoading(false)
+  }
+
   return (
     <>
       <Head>
