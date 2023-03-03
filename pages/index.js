@@ -22,7 +22,7 @@ export default function Home() {
     setLoading(true)
     axios.get(url).then((response) => {
       setWeather(response.data)
-      console.log(response.data)
+      // console.log(response.data)
     })
     setCity("")
     setLoading(false)
@@ -61,7 +61,7 @@ export default function Home() {
         </form>
       </div>
 
-      {weather.main && <Weather />}
+      {weather.main && <Weather data={weather} />}
 
     </>
   )
