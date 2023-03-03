@@ -29,9 +29,9 @@ export default function Home() {
     setLoading(false)
   }
 
-  if(loading) {
-    return <Spinner />
-  } else {
+  // if(loading) {
+  //   return <Spinner />
+  // } else {
     return (
       <>
         <Head>
@@ -70,4 +70,4 @@ export default function Home() {
       </>
     );
   }
-}
+
