@@ -5,7 +5,7 @@ import { BsSearch } from 'react-icons/bs';
 import Image from 'next/legacy/image';
 import Forest from '../public/Forest.jpg';
 import Weather from '../components/Weather';
-import Spinner from '../public/spinner.gif';
+import Spinner from '../components/Spinner';
 
 
 export default function Home() {
