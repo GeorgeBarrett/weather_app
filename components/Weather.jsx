@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Weather = () => {
-  return (
-    <div>Weather</div>
-  )
+const Weather = ({data}) => {
+
+    // console.log(data)
+
+    return (
+        <div>Weather</div>
+    )
 }
 
 export default Weather
