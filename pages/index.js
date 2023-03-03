@@ -2,7 +2,9 @@ import Head from 'next/head';
 import axios from 'axios';
 import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
-import Image from 'next/image';
+
+import Forest from '../public/Forest.jpg';
+
 
 export default function Home() {
 
@@ -34,11 +36,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Image 
-        src="https://images.unsplash.com/photo-1487621167305-5d248087c724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4332&q=80"
-        layout="fill"
-        className="object-cover"
-      />
+      
+
+
     </>
   )
 }
