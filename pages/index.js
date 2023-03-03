@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Image from 'next/legacy/image';
 import Forest from '../public/Forest.jpg';
+import Weather from '../components/Weather';
 
 
 export default function Home() {
@@ -60,6 +61,7 @@ export default function Home() {
         </form>
       </div>
 
+      {weather.main && <Weather />}
 
     </>
   )
